@@ -6,7 +6,7 @@ function App() {
   const [result, setResult] = useState("");
 
   const handlePredict = async () => {
-    const res = await fetch("https://bike-demand-predictor.onrender.com//predict", {
+    const res = await fetch("https://bike-demand-predictor.onrender.com/predict", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ features: input })
